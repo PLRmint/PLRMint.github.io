@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mint NFT</title>
+    <title>Mint NFT - NFT Marketplace</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,34 +13,61 @@
 
     <main>
         <section class="wallet-connect">
+            <p>First, connect your wallet:</p>
             <button id="connectWalletButton" class="button">Connect Wallet</button>
-            <div id="walletStatus" class="info-item"></div>
+            <div id="walletStatus"></div>
         </section>
 
-        <section class="mint-nft">
-            <h2>Mint NFT</h2>
-            <div class="form-group">
-                <label for="toAddress">Recipient Address:</label>
-                <input type="text" id="toAddress" placeholder="0x...">
-            </div>
-            <div class="form-group">
-                <label for="tokenId">Token ID:</label>
-                <input type="number" id="tokenId" placeholder="Token ID">
-            </div>
-            <div class="form-group">
-                <label for="affiliateAddress">Affiliate Address (optional):</label>
-                <input type="text" id="affiliateAddress" placeholder="0x...">
-            </div>
-            <button id="mintButton" class="button">Mint NFT</button>
-            <div id="mintStatus" class="info-item"></div>
+        <section class="nft-details-form">
+            <h2>NFT Details</h2>
+            <form id="mintForm">
+                <div class="form-group">
+                    <label for="nftName">NFT Name:</label>
+                    <input type="text" id="nftName" required>
+                </div>
+                <div class="form-group">
+                    <label for="nftDescription">Description:</label>
+                    <textarea id="nftDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="nftFile">File Upload:</label>
+                    <input type="file" id="nftFile" accept="image/png, image/jpeg, image/gif, video/mp4" required>
+                </div>
+                <!-- Add more fields as necessary for properties/attributes -->
+                <div class="form-group">
+                    <button type="submit" class="button">Mint NFT</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="minting-fee-info">
+            <h3>Minting Fee Information</h3>
+            <p>Minting Fee: <span>0.01 BNB</span> (Estimate)</p>
+            <p>Gas Fee: <span id="gasFeeEstimate">Calculating...</span></p>
+        </section>
+
+        <section id="transactionStatus" class="transaction-status" style="display:none;">
+            <h3>Transaction Status</h3>
+            <p id="txMessage"></p>
+            <a id="txLink" href="" target="_blank">View Transaction</a>
+        </section>
+
+        <section class="after-minting-info">
+            <h3>After Minting Your NFT</h3>
+            <p>Once your NFT is minted, you can view it in your profile, list it for sale, or share it with others!</p>
+        </section>
+
+        <section class="faq-help">
+            <h3>Need Help?</h3>
+            <p>Check out our <a href="faq.html">FAQ page</a> for more information or <a href="contact.html">contact support</a> if you need further assistance.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 PLRT Token. Redefining Licensed Digital Content.</p>
+        <p>&copy; 2024 NFT Marketplace. All rights reserved.</p>
     </footer>
     <script type="module" src="connectWallet.js"></script>
-    <script type="module" src="PLRMint.js"></script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="mintNFT.js"></script>
+    <!-- Include additional JS files as necessary -->
 </body>
 </html>
