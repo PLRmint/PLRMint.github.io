@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Details - NFT Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NFT Details</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mint.html">Mint NFT</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="nft-metadata">
+            <div class="nft-image">
+                <img src="path/to/nft-image.jpg" alt="NFT Name">
+            </div>
+            <div class="nft-info">
+                <h2>NFT Name</h2>
+                <p>Description of the NFT, including any unique attributes or backstory.</p>
+                <p><strong>Current Price:</strong> 0.5 ETH</p>
+                <p><strong>Owner:</strong> 0x123...456</p>
+                <!-- Add more metadata as needed -->
+            </div>
+        </section>
+
+        <section class="transaction-history">
+            <h3>Transaction History</h3>
+            <ul>
+                <li>Minted by 0xabc...123 on 01/01/2024</li>
+                <li>Sold to 0xdef...456 for 0.3 ETH on 02/01/2024</li>
+                <!-- Populate this list dynamically based on the NFT's transaction history -->
+            </ul>
+        </section>
+
+        <section class="bidding-buying">
+            <h3>Place a Bid or Buy Now</h3>
+            <input type="text" id="bidAmount" placeholder="Bid Amount in ETH">
+            <button class="button" id="placeBidButton">Place Bid</button>
+            <button class="button" id="buyNowButton">Buy Now for 0.5 ETH</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NFT Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="nftDetails.js"></script>
+</body>
+</html>
