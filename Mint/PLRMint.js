@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import { PLRMintABI } from './path/to/PLRMintABI.json'; // Ensure the path and import method match your project setup
+import { PLRMintABI } from './PLRMintABI.json'; // Ensure the path and import method match your project setup
 
 const PLRMintContractAddress = "0x1CCA53Bb4Fd1f64809Ff5C28bd77cd85213E14C5";
 
