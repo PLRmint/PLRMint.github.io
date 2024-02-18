@@ -1,7 +1,7 @@
 import { ethers } from 'https://cdn.jsdelivr.net/npm/ethers/dist/ethers.esm.min.js';
 import AffiliateTrackerABI from './AffiliateTrackerABI.json';
 
-const affiliateTrackerAddress = "YOUR_CONTRACT_ADDRESS";
+const affiliateTrackerAddress = "0xAdf7Aa145200DE1f4f31A0cdB8c45b2657C1E7f6";
 
 document.addEventListener('DOMContentLoaded', async () => {
     const connectButton = document.getElementById('connectWalletButton');
