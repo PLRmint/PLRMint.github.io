@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Dashboard - NFT Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Affiliate Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="affiliate-info">
+            <button id="connectWalletButton" class="button">Connect Wallet</button>
+            <div id="affiliateAddressDisplay" class="info-item"></div>
+            <div id="commissionEarnedDisplay" class="info-item"></div>
+        </section>
+
+        <section class="referral-links">
+            <h2>Your Referral Links</h2>
+            <ul id="referralLinksList">
+                <!-- Referral links will be dynamically inserted here -->
+            </ul>
+        </section>
+
+        <section class="withdraw-commissions">
+            <h2>Withdraw Commissions</h2>
+            <button id="withdrawCommissionsButton" class="button">Withdraw</button>
+            <p id="withdrawStatus"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NFT Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="affiliate.js"></script>
+</body>
+</html>
 
