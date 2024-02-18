@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint NFT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mint Your NFT</h1>
+    </header>
+
+    <main>
+        <section class="wallet-connect">
+            <button id="connectWalletButton" class="button">Connect Wallet</button>
+            <div id="walletStatus" class="info-item"></div>
+        </section>
+
+        <section class="mint-nft">
+            <h2>Mint NFT</h2>
+            <div class="form-group">
+                <label for="toAddress">Recipient Address:</label>
+                <input type="text" id="toAddress" placeholder="0x...">
+            </div>
+            <div class="form-group">
+                <label for="tokenId">Token ID:</label>
+                <input type="number" id="tokenId" placeholder="Token ID">
+            </div>
+            <div class="form-group">
+                <label for="affiliateAddress">Affiliate Address (optional):</label>
+                <input type="text" id="affiliateAddress" placeholder="0x...">
+            </div>
+            <button id="mintButton" class="button">Mint NFT</button>
+            <div id="mintStatus" class="info-item"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PLRT Token. Redefining Licensed Digital Content.</p>
+    </footer>
+    <script type="module" src="connectWallet.js"></script>
+    <script type="module" src="PLRMint.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
