@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Staking - NFT Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NFT Staking</h1>
+    </header>
+
+    <main>
+        <section class="staking-form">
+            <h2>Stake Your NFT</h2>
+            <form id="stakingForm">
+                <div class="form-group">
+                    <label for="nftIdToStake">NFT ID to Stake:</label>
+                    <input type="text" id="nftIdToStake" required>
+                </div>
+                <button type="button" id="stakeNFTButton" class="button">Stake NFT</button>
+            </form>
+        </section>
+
+        <section class="unstaking-form">
+            <h2>Unstake Your NFT</h2>
+            <form id="unstakingForm">
+                <div class="form-group">
+                    <label for="nftIdToUnstake">NFT ID to Unstake:</label>
+                    <input type="text" id="nftIdToUnstake" required>
+                </div>
+                <button type="button" id="unstakeNFTButton" class="button">Unstake NFT</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NFT Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="staking.js"></script>
+</body>
+</html>
