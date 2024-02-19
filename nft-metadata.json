@@ -1,0 +1,11 @@
+{
+  "name": "Test NFT",
+  "description": "This is a test NFT created for demonstration purposes.",
+  "image": "https://placekitten.com/200/300",
+  "attributes": [
+    {
+      "trait_type": "Coolness",
+      "value": "Very Cool"
+    }
+  ]
+}
