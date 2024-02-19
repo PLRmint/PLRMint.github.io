@@ -1,9 +1,30 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Basic Test Site</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: white; padding: 10px 20px; text-align: center; }
+        main { padding: 20px; }
+        button { background-color: blue; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background-color: darkblue; }
+    </style>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+
+<header>
+    <h1>Web3 Basic Test Site</h1>
+    <button id="connectWallet">Connect to Wallet</button>
+</header>
+
+<main>
+    <h2>Welcome</h2>
+    <p>This is a simple page to test Web3 functionalities.</p>
+</main>
+
+<script src="app.js"></script>
+</body>
 </html>
