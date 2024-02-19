@@ -40,15 +40,14 @@ async function mintNFT(metadataURI) {
     const affiliate = ethers.constants.AddressZero; // Use the zero address if affiliate functionality is not used
 
     try {
-        const txResponse = await plrMintContract.mintNFT(signer.getAddress(), tokenId, metadataURI, affiliate, editionType);
-        console.log("Transaction response received:", txResponse);
-        const txReceipt = await txResponse.wait();
-        console.log(`NFT minted successfully. Transaction Hash: ${txReceipt.transactionHash}`);
-        alert('NFT minted successfully.');
-    } catch (error) {
-        console.error('Minting failed:', error);
-        alert('Minting failed. See console for details.');
-    }
+    const txResponse = await plrMintContract.mintNFT(signer.getAddress(), tokenId, metadataURI, affiliate, editionType);
+    const receipt = await txResponse.wait();
+    console.log(`Transaction successful with hash: ${receipt.transactionHash}`);
+} catch (error) {
+    console.error("Transaction failed:", error);
+    console.log(error.data); // This might give more details
+}
+
 }
 
 
