@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint NFT</title>
+    <link rel="stylesheet" href="style.css"> <!-- If you have custom styles -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" defer></script>
+    <script src="mintNFT.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mint Your NFT</h1>
+        <button id="connectWallet">Connect Wallet</button>
+    </header>
+
+    <main>
+        <form id="mintForm">
+            <label for="metadataURI">Metadata URI:</label>
+            <input type="text" id="metadataURI" name="metadataURI" required>
+            <button type="submit">Mint NFT</button>
+        </form>
+    </main>
+</body>
+</html>
